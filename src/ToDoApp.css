@@ -149,6 +149,44 @@ h1 {
 .btn:active {
   background-color: cadetblue;
 }
+
+.site-form {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 300px;
+  max-width: 93vw;
+  max-height: calc(100vh - 100px);
+  margin: 120px auto 0 auto;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.site-form input[type='password'],
+.site-form input[type='email'],
+.site-form input[type='text'] {
+  width: 300px;
+  max-width: 90vw;
+  height: 35px;
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--lcDark);
+  outline: 0 none;
+  transition: ease 0.45s;
+  transition-property: box-shadow;
+}
+
+.site-form input[type='password']:focus,
+.site-form input[type='email']:focus,
+.site-form input[type='text']:focus {
+  box-shadow: 0 0 12px var(--lcLight);
+}
+
+.site-form button {
+  width: 300px;
+  max-width: 90vw;
+}
+
 @media (max-width: 600px) {
   .login-page {
     max-width: 100vw;
